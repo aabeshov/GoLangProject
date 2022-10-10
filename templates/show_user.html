@@ -1,0 +1,17 @@
+{{ define "user_show" }}
+{{ template "header"}}
+<main class="px-3">
+    <div class="form-control bg-light">
+
+    <h1 class="cover-heading">NAME :{{ .Name }}</h1>
+    <h1 class="cover-heading">ID :{{ .Id }}</h1>
+
+    <p class="lead">AGE :{{ .Age }}</p>
+    <a  class="btn btn-warning" href="/info/{{ .Id }}/delete/">Delete</a>
+    </div>
+        <p class="lead"style="margin-top: 15px "><a href="/" class="btn btn-light">Back to Home</a></p>
+
+
+</main>
+{{ template "footer" }}
+{{ end }}

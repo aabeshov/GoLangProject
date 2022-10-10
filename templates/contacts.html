@@ -1,0 +1,206 @@
+{{ define "contact" }}
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+
+  <title>Golang project</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
+
+
+
+
+
+  <!--  <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"></head>
+<link href="https://getbootstrap.com/docs/5.2/examples/cover/cover.css" rel="stylesheet">
+
+
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nesolestag-enadenud {
+    width: 615px;
+    margin: 0 auto;
+  }
+
+  .kesednsoled:after,
+  .kesednsoled:before {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+  .ico-wrap {
+    color: white;
+    width: 48px;
+    height: 48px;
+    margin: 30px 18px 5px 5px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid black;
+    float: left;
+    border-radius: 30px;
+  }
+  .ico-contact {
+    line-height: 1.9 !important;
+  }
+  .meanous-andscoev {
+    float: left;
+    margin-bottom: 20px;
+  }
+  .aio-icon-title {
+    font-size: 16px;
+    color: black;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 767px) {
+    .meanous-andscoev,
+    .ico-wrap {
+      float: none;
+      text-align: center;
+    }
+    .ico-wrap {
+      margin: 0 auto 15px auto;
+    }
+  }
+
+</style>
+
+
+
+</head>
+<body class=" h-100 text-center text-bg-dark">
+
+<div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">ProStore</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="/">Home</a>
+        <a class="nav-link fw-bold py-1 px-0 " href="/create/">Add Post</a>
+        <a class="nav-link fw-bold py-1 px-0 active" href="/contacts/">Contacts</a>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<div class="nesolestag-enadenud bg-light text-dark border border-warning rounded">
+  <h3 class="text-warning" style="text-align:center;font-weight: bolder">Contacts</h3>
+
+  <div class="ico-wrap"> <i class="fa fa-map-marker ico-contact"></i>
+  </div>
+  <div class="meanous-andscoev">
+    <h4 class="aio-icon-title text-dark" >Legal address:</h4>
+    <div class="aio-icon-description">
+      Tole Bi 52 , Almaty , Kazakhstan
+      <br> Independence Hall</div>
+  </div>
+
+  <span class="kesednsoled"></span>
+
+  <div class="ico-wrap"> <i class="fa fa-clock-o ico-contact"></i>
+  </div>
+  <div class="meanous-andscoev">
+    <h4 class="aio-icon-title text-dark" >Working hours of KBTU and offices of the company:</h4>
+    <div class="aio-icon-description">
+      Mon.-Sat. from 10:00 to 21:00, with a lunch break
+      <br>Seven days a week</div>
+  </div>
+
+  <span class="kesednsoled"></span>
+
+  <div class="ico-wrap">
+    <i class="fa fa-envelope ico-contact"></i>
+  </div>
+  <div class="meanous-andscoev">
+    <h4 class="aio-icon-title text-dark" >Email:</h4>
+    <div class="aio-icon-description">
+      marat_dataengineer@outlook.com
+      <br>alen_pro@prof.pro</div>
+  </div>
+
+  <span class="kesednsoled"></span>
+
+  <div class="ico-wrap">
+    <i class="fa fa-phone ico-contact"></i>
+  </div>
+  <div class="meanous-andscoev">
+    <h4 class="aio-icon-title text-dark" >Communication by phone:</h4>
+    <div class="aio-icon-description">
+      +1 (631) 833-28-23
+      <br>+7 (775) 506-75-52</div>
+  </div>
+
+  <span class="kesednsoled"></span>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+{{ end }}

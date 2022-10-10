@@ -1,0 +1,18 @@
+{{ define "create" }}
+<style>
+
+</style>
+{{ template "header1"}}
+<main class="px-3">
+  <h1>This is main page of our golang project.</h1>
+  <form action="/save_article/" method="post">
+    <input type="text" name="name" id="name" placeholder="Enter your name" style="margin-top: 10px" class="form-control"><br>
+    <input type="number" name="age" id="age" placeholder="Enter your age" class="form-control">
+
+    <!--    <textarea name="age" id="age" class="form-control" placeholder="Enter your age">Hello world</textarea>-->
+    <button class="btn btn-warning" style="margin-top: 10px">Add</button>
+  </form>
+  </p>
+</main>
+{{ template "footer" }}
+{{ end }}

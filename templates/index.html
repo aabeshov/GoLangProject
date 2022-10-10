@@ -1,0 +1,23 @@
+{{ define "index" }}
+{{ template "header"}}
+    <main class="px-3 fixed" style="">
+        <h1>This is main page of our golang project.</h1>
+        {{ if . }}
+        <a class="btn btn-warning position-relative" style="margin-bottom: 10px" href="/delete/">Delete All Users</a>
+        {{ end }}
+
+        {{ range . }}
+        <div class="alert alert-light">
+            <h2>{{ .Name }}</h2>
+            <p>AGE : {{ .Age }} </p>
+            <a class="btn btn-dark"  href="/info/{{ .Id }} " style="margin-left: 80px">More info about user</a>
+            <a  class="btn btn-warning" style="float:right;" href="/info/{{ .Id }}/delete/">Delete</a>
+        </div>
+
+        {{ else }}
+            <p class="lead">There are no users! Try to add more!</p>
+        {{ end }}
+
+    </main>
+{{ template "footer" }}
+{{ end }}
